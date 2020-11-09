@@ -11,12 +11,15 @@ font-weight: bold;
 text-transform: capitalize;
 }
 
-#nav {
+.menu {
 font-family: 'Commissioner', sans-serif;
 font-size: 20px;
 font-weight: bold;
 background-color: #66635B;
 padding: 35px;
+display: flex;
+justify-content: space-around;
+ flex-direction: row;
 }
 
 p {
@@ -36,3 +39,13 @@ a:hover {
     font-weight: bold;
 
 }
+
+@media screen and (max-width: max-width 600px) {
+  .menu{
+
+    font-family: 'Comissioner', sans-serif;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
