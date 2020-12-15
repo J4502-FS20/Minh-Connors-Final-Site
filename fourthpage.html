@@ -1,13 +1,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Other Monuments</title>
+    <title>Thomas Jefferson's Gravestone Quiz</title>
     <meta name="description" content="The background and controversy of the Thomas Jefferson gravetone">
     <meta name="author" content="Minh Connors">
     <meta name="keywords" content="thomas jefferson gravetone">
     <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Commissioner&family=Playfair+Display&display=swap" rel="stylesheet">
-
+<script src="quiz.js" defer></script>
   </head>
 
   <body>
@@ -15,12 +15,10 @@
       <ul class="menu">
 
 
-
-               <li class="item"><a href="index.html">Thomas Jefferson's Gravestone</a></li>&nbsp; &nbsp; &nbsp; &nbsp;
-                  <li class="item"><a href="firstpage.html">Brief History of Thomas Jefferson</a></li>&nbsp; &nbsp; &nbsp; &nbsp;
-                <li class="item"><a href="secondpage.html">History of Jefferson's Gravestone</a></li>&nbsp; &nbsp; &nbsp; &nbsp;
-                <li class="item"><a href="thirdpage.html">Recent News and Controversy </a></li>&nbsp; &nbsp; &nbsp; &nbsp;
-                  <li class="item"><a href="fourthpage.html">Slave Owner Monuments </a>&nbsp; &nbsp; &nbsp; &nbsp;
+        <li class="item"><a href="index.html">Brief History of Thomas Jefferson</a></li>&nbsp; &nbsp; &nbsp; &nbsp;
+      <li class="item"><a href="secondpage.html">History of Jefferson's Gravestone</a></li>&nbsp; &nbsp; &nbsp; &nbsp;
+      <li class="item"><a href="thirdpage.html">Recent News and Controversy </a></li>&nbsp; &nbsp; &nbsp; &nbsp;
+        <li class="item"><a href="fourthpage.html">Quiz Yourself! </a></li>&nbsp; &nbsp; &nbsp; &nbsp;
 
 
   </ul>
@@ -28,12 +26,72 @@
 
     <main>
 
-      <h1>Status of Other Momuments Dedicated to Slaveowners</h1>
+      <h3>Quiz</h3>
 
-    </div>
-      <img src="worldmap.jpg" alt="Status of other monuments"  ALIGN=”center”  width="1000" height="600">
-      <p>Interactive world map that would have points that when clicked would show the status of slave owner monuments and their brief history </p>
-    </div>
+      <form>
+    <h2> What year did Thomas Jefferson Die? </h2>
+      <div><input id="1821" type="radio" name="death" value="1821">
+      <label for="1821">1821</label></div>
+
+      <div><input id="1826" type="radio" name="death" value="1826">
+      <label for="1826">1826</label></div>
+
+      <div><input id="1828" type="radio" name="death" value="1828">
+      <label for="1828">1828</label></div>
+
+      <div><input id="1776" type="radio" name="death" value="1776">
+      <label for="1776">1776</label></div>
+  </form>
+
+  <form>
+    <h2> What year was the tombstone donated to the University of Missouri?</h2>
+
+      <div><input id="1893" type="radio" name="donate" value="1893">
+      <label for="1893">1893</label></div>
+
+      <div><input id="1901" type="radio" name="donate" value="1901">
+      <label for="1901">1901</label></div>
+
+      <div><input id="1924" type="radio" name="donate" value="1924">
+      <label for="1924">1924</label></div>
+
+      <div><input id="1883" type="radio" name="donate" value="1883">
+      <label for="1883">1883</label></div>
+  </form>
+
+  <form>
+    <h2>How much did the protective case for Jefferson's Tombstone cost?</h2>
+      <div><input id="$20,000" type="radio" name="cost" value="$20,000">
+      <label for="$20,000">$20,000</label></div>
+
+      <div><input id="$2,000" type="radio" name="cost" value="$2,000">
+      <label for="$2,000">$2,000</label></div>
+
+      <div><input id="$15,000" type="radio" name="cost" value="$15,000">
+      <label for="$15,000">$15,000</label></div>
+
+      <div><input id="$25,000" type="radio" name="cost" value="$25,000">
+      <label for="$25,000">$25,000</label></div>
+  </form>
+
+  <form>
+    <h2>4)	What shape is his tombstone?</h2>
+
+      <div><input id="Pyramid" type="radio" name="shape" value="Pyramid">
+      <label for="Pyramid">Pyramid</label></div>
+
+      <div><input id="Obelisk" type="radio" name="shape" value="Obelisk">
+      <label for="Obelisk">Obelisk</label></div>
+
+      <div><input id="Rectangular" type="radio" name="shape" value="Rectangular">
+      <label for="Rectangular">Rectangular</label></div>
+  </form>
+
+
+  <button class="shadow" id="submit">Submit</button>
+
+  <p class="answers" id="answertotal"></p>
+
     </main>
   </body>
 </html>
